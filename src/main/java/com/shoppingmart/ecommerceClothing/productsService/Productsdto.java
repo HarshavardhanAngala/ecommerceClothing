@@ -1,5 +1,7 @@
 package com.shoppingmart.ecommerceClothing.productsService;
 
+import com.shoppingmart.ecommerceClothing.BookingServices.BookingDto;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,12 +16,15 @@ public class Productsdto {
     private String Productname;
     private int price;
     private int quantity;
+
     
     public Productsdto(int id, String productname, int price, int quantity) {
         this.id = id;
         Productname = productname;
         this.price = price;
         this.quantity = quantity;
+    }
+    public Productsdto() {
     }
     public int getId() {
         return id;
