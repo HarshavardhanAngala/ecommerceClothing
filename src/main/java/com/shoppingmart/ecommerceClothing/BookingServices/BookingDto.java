@@ -1,5 +1,7 @@
 package com.shoppingmart.ecommerceClothing.BookingServices;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,8 +18,9 @@ public class BookingDto {
     private int price;
     private String paymentType;
     private String status;
+    private LocalDateTime bookingdateTime;
 
-    
+
     public int getId() {
         return id;
     }
@@ -54,6 +57,14 @@ public class BookingDto {
     public void setStatus(String status) {
         this.status = status;
     }
+    public LocalDateTime getBookingdateTime() {
+        return bookingdateTime;
+    }
+    public void setBookingdateTime(LocalDateTime bookingdateTime) {
+        this.bookingdateTime = bookingdateTime;
+    }
+  
+    
 
     
 }
