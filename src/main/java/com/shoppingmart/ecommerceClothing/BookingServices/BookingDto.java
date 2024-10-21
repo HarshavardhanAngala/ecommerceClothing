@@ -18,6 +18,8 @@ public class BookingDto {
     private int price;
     private String paymentType;
     private String status;
+    private int quantity;
+    private int totalPrice;
     private LocalDateTime bookingdateTime;
 
 
@@ -63,6 +65,19 @@ public class BookingDto {
     public void setBookingdateTime(LocalDateTime bookingdateTime) {
         this.bookingdateTime = bookingdateTime;
     }
+    public int getQuantity() {
+        return quantity;
+    }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+    public void setTotalPrice(int totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+    
   
     
 
