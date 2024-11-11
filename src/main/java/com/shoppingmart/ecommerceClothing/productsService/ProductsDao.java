@@ -17,14 +17,5 @@ private ProductRepo productsrepo;
         }
     }
     
-    private ProductRepo productsrepo;
 
-    public String saveProductsDAO(Productsdto productsdto){
-        Productsdto pr=productsrepo.save(productsdto);
-        if (pr != null) {
-            return "product saved";
-        }else{
-        return "product not saved";
-        }
-    }
 }
